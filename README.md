@@ -8,8 +8,8 @@ https://bitcoincore.org
 What does this repo contain, that the original doesn't?
 -------------------------------------------------------
 
-This repo contains the https://github.com/bitcoin/bitcoin/pull/12040 which contains support for CORS, when running a bitcoin node.
-An option `-rpccorsdomain` was added by https://github.com/lionello, special thanks to him!
+This repo contains the [0][PR#12040] which contains support for CORS, when running a bitcoin node.
+An option `-rpccorsdomain` was added by [1][lionello], special thanks to him!
 The fork was created because the original PR on the original repo has been pending for almost a year.
 
 **Usage:**
@@ -97,3 +97,6 @@ Translations are periodically pulled from Transifex and merged into the git repo
 pull from Transifex would automatically overwrite them again.
 
 Translators should also subscribe to the [mailing list](https://groups.google.com/forum/#!forum/bitcoin-translators).
+
+[0]: https://github.com/bitcoin/bitcoin/pull/12040
+[1]: https://github.com/lionello

@@ -5,6 +5,29 @@ Bitcoin Core integration/staging tree
 
 https://bitcoincore.org
 
+What does this repo contain, that the original doesn't?
+-------------------------------------------------------
+
+This repo contains the https://github.com/bitcoin/bitcoin/pull/12040 which contains support for CORS, when running a bitcoin node.
+An option `-rpccorsdomain` was added by https://github.com/lionello, special thanks to him!
+The fork was created because the original PR on the original repo has been pending for almost a year.
+
+**Usage:**
+
+Run `bitcoind` client, allowing access to `http://localhost:8080`:
+
+`bitcoind -server -rpcport=8332 -rpccorsdomain=http://localhost:8080`
+
+Test connection, with CORS header set to `Origin: http://localhost:8080`:
+
+```
+curl -v -X OPTIONS \
+    http://localhost:8332/ \
+    -H 'Origin: http://localhost:8080' \
+    -H 'Access-Control-Request-Method: POST' \
+    -H 'Access-Control-Request-Headers: authorization,content-type'
+```
+
 What is Bitcoin?
 ----------------
 

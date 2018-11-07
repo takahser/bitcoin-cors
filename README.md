@@ -8,8 +8,8 @@ https://bitcoincore.org
 What does this repo contain, that the original doesn't?
 -------------------------------------------------------
 
-This repo contains the [0][PR#12040] which contains support for CORS, when running a bitcoin node.
-An option `-rpccorsdomain` was added by [1][lionello], special thanks to him!
+This repo contains the [PR#12040][0] which contains support for CORS, when running a bitcoin node.
+An option `-rpccorsdomain` was added by [lionello][1], special thanks to him!
 The fork was created because the original PR on the original repo has been pending for almost a year.
 
 **Usage:**
